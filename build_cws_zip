@@ -1,0 +1,14 @@
+#!/bin/bash
+
+TMP_FOLDER=/tmp/mini-calendar-zip
+CWS_ZIP_NAME=~/mini-calendar.zip
+
+rm -rf $TMP_FOLDER
+mkdir -p $TMP_FOLDER/img
+cp *.js *.css *.html *.json $TMP_FOLDER
+cp img/*.png $TMP_FOLDER/img
+
+rm -f $CWS_ZIP_NAME
+pushd $TMP_FOLDER
+zip $CWS_ZIP_NAME -r .
+popd
