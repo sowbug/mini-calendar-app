@@ -1,0 +1,18 @@
+{
+  "name": "Weeklette",
+  "description": "A calendar.",
+  "manifest_version": 2,
+  "minimum_chrome_version": "30",
+  "version": "0.0.0.1",
+
+  "app": {
+    "background": {
+      "scripts": ["main.js"]
+    }
+  },
+
+  "icons": {
+    "16": "img/icon-16x16.png",
+    "128": "img/icon-128x128.png"
+  }
+}
